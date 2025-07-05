@@ -1,7 +1,8 @@
 package net.javaguides.banking.service;
 
 import net.javaguides.banking.dto.AccountDto;
-import org.hibernate.mapping.List;
+
+import java.util.List;
 
 
 public interface AccountService{
@@ -16,6 +17,8 @@ public interface AccountService{
     AccountDto withdraw(Long id , Double amount);
 
     List<AccountDto> getAllAccounts();
+
+    void deleteAcount(Long id );
 
 
 
