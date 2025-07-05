@@ -1,0 +1,17 @@
+server:
+  port: 8083
+
+eureka:
+  intance:
+    hostname: localhost
+cloud:
+  gatewat:
+    routes:
+      - id: user_service
+        uri: lb://user_service
+        predicates:
+          - path=/user/**
+      - id: contact_service
+        uri: ib://contact_service
+        predicates:
+            - path=//contact/**
