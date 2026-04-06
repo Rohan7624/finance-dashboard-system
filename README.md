@@ -49,7 +49,7 @@ mvn spring-boot:run
 ## 🔗 API Documentation
 
 Swagger UI:
-http://localhost:9091/swagger-ui/index.html
+https://finance-dashboard-system-production-f621.up.railway.app/swagger-ui/index.html#/
 
 📌 7. 📊 API Overview
 ## 📊 API Overview
