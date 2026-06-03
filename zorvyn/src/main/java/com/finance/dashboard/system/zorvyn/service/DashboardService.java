@@ -24,6 +24,8 @@ public class DashboardService {
         Double income = repository.getTotalIncome();
         Double expense = repository.getTotalExpense();
 
+        System.out.println("DashboardService: Total Income = " + income + ", Total Expense = " + expense);
+        System.out.println("DashboardService: Calculated Net Balance = " + (income != null && expense != null ? income - expense : "N/A"));
         return new SummaryResponse(
                 income != null ? income : 0,
                 expense != null ? expense : 0

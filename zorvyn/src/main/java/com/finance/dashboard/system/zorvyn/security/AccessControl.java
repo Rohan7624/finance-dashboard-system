@@ -12,7 +12,7 @@ public class AccessControl {
     }
 
     public static void checkAnalystOrAdmin(Role role) {
-        if (role == Role.VIEWER) {
+        if (role != Role.ADMIN && role != Role.ANALYST) {
             throw new RuntimeException("Access Denied");
         }
     }

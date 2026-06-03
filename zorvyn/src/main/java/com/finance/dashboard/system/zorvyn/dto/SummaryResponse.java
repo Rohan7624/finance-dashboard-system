@@ -1,5 +1,8 @@
 package com.finance.dashboard.system.zorvyn.dto;
 
+import lombok.Data;
+
+@Data
 public class SummaryResponse {
 
     private Double totalIncome;
